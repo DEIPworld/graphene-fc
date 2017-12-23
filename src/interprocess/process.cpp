@@ -1,7 +1,9 @@
+#if GCC_VERSION > 50000
 #include <bits/c++config.h>
 #ifdef _GLIBCXX_DEPRECATED
     #undef _GLIBCXX_DEPRECATED
     #define _GLIBCXX_DEPRECATED
+#endif
 #endif
 
 #include <fc/interprocess/process.hpp>
